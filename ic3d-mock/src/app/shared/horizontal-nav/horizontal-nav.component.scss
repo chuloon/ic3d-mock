@@ -1,0 +1,14 @@
+#horizontal-nav-container {
+    background-color: #333;
+    height: 45px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    .nav-logo {
+        height: 35px;
+        position: absolute;
+        top: 5px;
+        left: 50px;
+        cursor: pointer;
+    }
+}
