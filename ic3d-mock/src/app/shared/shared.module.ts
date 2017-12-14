@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HorizontalNavComponent } from './horizontal-nav/horizontal-nav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { VerticalNavComponent } from './vertical-nav/vertical-nav.component';
 
 @NgModule({
   imports: [
@@ -9,10 +10,12 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatSidenavModule
   ],
   declarations: [
-    HorizontalNavComponent
+    HorizontalNavComponent,
+    VerticalNavComponent
   ],
   exports: [
-    HorizontalNavComponent
+    HorizontalNavComponent,
+    VerticalNavComponent
   ]
 })
 export class SharedModule { }

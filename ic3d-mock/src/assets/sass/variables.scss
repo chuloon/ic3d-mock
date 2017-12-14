@@ -1,0 +1,18 @@
+$grey: #1A1D27;
+$light-blue: #99ccff;
+$teal: #66a4c0;
+$turquoise: #1e6291;
+$blue: #123f61;
+@font-face {
+    font-family: 'headline';
+    src: local('O'), url('/assets/fonts/BEBAS.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'normal';
+    src: local('O'), url('/assets/fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

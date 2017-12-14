@@ -1,0 +1,42 @@
+// Import Variables
+@import "../../../assets/sass/variables";
+#vertical-nav-container {
+    display: inline-block;
+    height: calc(100vh - 45px);
+    width: 150px;
+    background: $grey;
+    margin-top: 45px;
+    ul {
+        color: white;
+        list-style-type: none;
+        font-family: headline;
+        padding-left: 30px;
+        li {
+            padding-bottom: 5px;
+            cursor: pointer;
+            transition: color 0.3s;
+            overflow: hidden;
+            &:hover {
+                color: #b2b2b2;
+            }
+            &.menu-option {
+                max-height: 25px;
+                transition: max-height 0.3s, padding-left 0.3s 0.3s ease-in-out, opacity 0.3s 0.3s;
+                font-size: 0.7em;
+                padding-left: 10px;
+                opacity: 1;
+                &.collapsed {
+                    max-height: 0px;
+                    padding: 0px;
+                    opacity: 0;
+                }
+            }
+            .expand-collapse-chevron {
+                transition: all 0.3s;
+                &.expand-arrow {
+                    transform: rotate(-180deg);
+                }
+            }
+        }
+    }
+}

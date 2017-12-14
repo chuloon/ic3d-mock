@@ -1,5 +1,7 @@
+// Import Variables
+@import "../../../assets/sass/variables";
 #horizontal-nav-container {
-    background-color: #333;
+    background-color: $blue;
     height: 45px;
     width: 100%;
     position: fixed;
@@ -8,7 +10,7 @@
         height: 35px;
         position: absolute;
         top: 5px;
-        left: 50px;
+        left: 40px;
         cursor: pointer;
     }
 }
