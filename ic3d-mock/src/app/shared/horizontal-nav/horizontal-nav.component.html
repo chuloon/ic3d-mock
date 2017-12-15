@@ -1,3 +1,5 @@
-<div id="horizontal-nav-container">
+<div id="horizontal-nav-container" [ngClass]="{ 'search-active': showSearch }">
     <img class="nav-logo" src="../../assets/images/logo.png" />
+    <i class="material-icons search-button" (click)="searchToggle()">search</i>
+    <input type="text" class="search-bar">
 </div>

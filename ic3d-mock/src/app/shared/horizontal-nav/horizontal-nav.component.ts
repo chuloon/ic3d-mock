@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./horizontal-nav.component.scss']
 })
 export class HorizontalNavComponent implements OnInit {
+  showSearch: boolean = false;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  searchToggle = () => {
+    this.showSearch = !this.showSearch;
   }
 
 }

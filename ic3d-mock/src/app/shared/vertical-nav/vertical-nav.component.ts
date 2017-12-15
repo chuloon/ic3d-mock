@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./vertical-nav.component.scss']
 })
 export class VerticalNavComponent implements OnInit {
-  designerCollapsed: boolean = true;
   industriesCollapsed: boolean = true;
 
   constructor() { }
@@ -16,9 +15,5 @@ export class VerticalNavComponent implements OnInit {
 
   toggleIndustries = () => {
     this.industriesCollapsed = !this.industriesCollapsed;
-  }
-
-  toggleDesigners = () => {
-    this.designerCollapsed = !this.designerCollapsed;
   }
 }

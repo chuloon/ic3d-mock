@@ -13,4 +13,42 @@
         left: 40px;
         cursor: pointer;
     }
+    .search-button {
+        float: right;
+        font-size: 35px;
+        color: white;
+        padding: 7px;
+        padding-right: 15px;
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+        transition: color 0.3s 0.2s, padding 0.3s 0.2s, font-size 0.3s 0.2s;
+    }
+    .search-bar {
+        position: absolute;
+        right: 15px;
+        top: 8px;
+        height: 30px;
+        width: 0px;
+        padding: 0px;
+        border: none;
+        border-radius: 20px;
+        transition: width 0.4s ease-in-out, padding 0.3s;
+        &:focus {
+            outline: none;
+        }
+    }
+    &.search-active {
+        .search-button {
+            color: $blue;
+            padding: 12px;
+            padding-right: 20px;
+            font-size: 25px;
+        }
+        .search-bar {
+            width: 250px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
 }
