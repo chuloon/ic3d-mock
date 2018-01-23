@@ -1,0 +1,17 @@
+.product-container {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.2s;
+    max-width: 100px;
+    font-family: normal;
+    font-size: 14px;
+    &:hover {
+        background: #ddd;
+    }
+    img {
+        width: 100px;
+    }
+}

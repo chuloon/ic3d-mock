@@ -1,6 +1,38 @@
 <div id="shop-page-container">
     <vertical-nav></vertical-nav>
-    <div class="shop-content">
-        <p>Shop Page Content</p>
+    <div class="shop-search-container">
+        <div class="shop-filter-options">
+            <input type="text" class="filter-bar" placeholder="FILTER">
+            <hr>
+            <div class="filter-category-container">
+                <div class="filter-category" (click)="toggleFilter('showOverwatchFilters')" [ngClass]="{ 'show-list': showOverwatchFilters }">
+                    <h1>Overwatch</h1>
+                    <div class="filter-list">
+                        <div class="filter-item">Sombra</div>
+                        <div class="filter-item">Mercy</div>
+                        <div class="filter-item">Soldier 76</div>
+                        <div class="filter-item">Reinhardt</div>
+                        <div class="filter-item">Genji</div>
+                    </div>
+                </div>
+
+                <div class="filter-category">
+                    <h1>Fire Emblem</h1>
+                </div>
+                <div class="filter-category">
+                    <h1>Mass Effect</h1>
+                </div>
+                <div class="filter-category">
+                    <h1>Bioshock</h1>
+                </div>
+            </div>
+        </div>
     </div>
+    <perfect-scrollbar class="shop-scroll">
+        <div class="shop-content">
+            <ng-template ngFor let-item [ngForOf]="shopItems">
+                <product [name]="item.name" [thumbnail]="item.thumbnail" [price]="item.price"></product>
+            </ng-template>
+        </div>
+    </perfect-scrollbar>
 </div>
